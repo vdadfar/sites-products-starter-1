@@ -1,0 +1,44 @@
+---
+{
+    "stream": {
+        "$id": "ideas",
+        "source": "knowledgeGraph",
+        "destination": "pages",
+      "fields": [
+        "id",
+        "uid",
+        "name",
+        "c_post",
+        "c_linkedUser.name"
+      ],
+      "filter": {
+        "entityTypes": [
+          "ce_idea"
+        ]
+      }
+    },
+    "urlFormat": "{{id}}"
+}
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{name}}</title>
+    <meta name="description" content={{name}}>
+    {{>head}}
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
+  {{>styles}}
+</head>
+
+<div class="container mx-auto px-4">
+    <body>
+    </body> 
+</div>
+
+{{>footer}}
+
+</html>
